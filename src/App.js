@@ -4,10 +4,13 @@ import axios from 'axios';
 class App extends React.Component {
   componentDidMount() {
     const host = "http://localhost:8081"
-    // axios.delete(`${host}/delete/1001`)
-    // .then(res => {
-    //   console.log(res.data);
-    // })
+    axios.delete(`${host}/delete/1001`,{
+      headers:{test:"test"},
+      params:{test:"test"}
+    })
+    .then(res => {
+      console.log(res.data);
+    })
 
     axios.post(`${host}/users`, {
         id:4,
