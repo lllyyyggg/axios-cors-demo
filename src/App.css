@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -16,17 +16,81 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
+} */
+/* 
 .App-link {
   color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+.gutter-example .ant-row > div {
+  background: transparent;
+  border: 0;
+}
+#wrapper {
+  left: 0px;
+}
+@media only screen and (max-width: 666px) {
+  .gutter-box {
+    background-size: 0% ; 
+  }
+}
+.gutter-box {
+  padding: 5px 0;
+  background-image: url(https://zidongchen.github.io/jinChi/images/login/u352.png);
+  background-size: 100% auto; 
+  background-repeat:no-repeat;
+  height: 400px; 
+}
+.full-height {
+  height: 100%;
+}
+.full-height-80 {
+  height: 80%;
+}
+.full-height-20 {
+  height: 20%;
+}
+.login-box{
+  height: 430px;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 1);
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.349019607843137);
+  /* line-height: 20px; */
+  padding-top: 6%;
+  position: relative;
+  top: -4%;
+  text-align: center;
+  /* 居中 */
+  margin: 0 auto;
+  border-color: rgba(233, 233, 233, 1);
+}
+
+.login-input input{
+  padding-left: 50px !important;
+}
+.login-input input::-webkit-input-placeholder{
+  color: #cccccc;
+  font-size: 14px;
+}
+
+.copy-right {
+  background-color: #ffffff;
+}
+
+@media only screen and (max-height: 666px) {
+  #copy-right {
+    display: none;
   }
 }
