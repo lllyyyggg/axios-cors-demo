@@ -1,9 +1,8 @@
 import React from 'react';
-// import axios from 'axios';
 import { Input, Icon, Button, Checkbox } from 'antd';
 import 'antd/dist/antd.css';
 import './App.css';
-
+// import axios from 'axios';
 
 class App extends React.Component {
   componentDidMount() {
@@ -33,7 +32,7 @@ class App extends React.Component {
       <div className={`full-height`} id="wrapper">  
         <div className='gutter-box' style={{minWidth: '290px'}}>
               <div className='login-box'>
-                <img src={require(`../src/logo-lg.svg`)} style={{width:'25.5%'}}></img>
+                <img src={require(`../src/logo-lg.svg`)} style={{width:'25.5%'}} alt=''></img>
                 <div style={{height:'10%'}}></div>
                 <div style={{padding: '0px 28px 0px 28px', height:'50%'} }>
                   <Input className='login-input' size='large' prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)'}} />} placeholder="请输入用户名称"/>
@@ -48,8 +47,8 @@ class App extends React.Component {
                 </div>
               </div>
         </div>
-        <div style={{position:'fixed',height:'80px',width:'100%',bottom:'0px',textAlign:'center', fontSize:'11px'}} className='copy-right' id="copy-right">
-          <img src={require(`../src/logo.png`)} style={{height:'38%'}}></img>
+        <div style={{left:'0px',position:'fixed',height:'80px',width:'100%',bottom:'0px',textAlign:'center', fontSize:'11px'}} className='copy-right' id="copy-right">
+          <img src={require(`../src/logo.png`)} style={{height:'38%'}} alt=''></img>
           <br/>
           <div style={{height:'10%'}}></div>
           <span>长沙矿冶研究院智能技术研究所提供技术支持</span>

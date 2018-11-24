@@ -56,7 +56,7 @@ function draw() {
         var froce = p5.Vector.sub(p1.pos, p2.pos);
         var dsquared = froce.magSq();
         dsquared = constrain(dsquared,25,500);
-        var G = 70;
+        var G = 20;
         var strength = G / dsquared;
         froce.setMag(strength);
         // p2.acc.add(froce);
