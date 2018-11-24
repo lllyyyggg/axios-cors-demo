@@ -35,7 +35,7 @@ class App extends React.Component {
               <div className='login-box'>
                 <img src={require(`../src/logo-lg.svg`)} style={{width:'25.5%'}}></img>
                 <div style={{height:'10%'}}></div>
-                <div style={{padding:'0px 28px 0px 28px', height:'50%'} }>
+                <div style={{padding: '0px 28px 0px 28px', height:'50%'} }>
                   <Input className='login-input' size='large' prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)'}} />} placeholder="请输入用户名称"/>
                   <div style={{height:'10%'}}></div>
                   <Input className='login-input' type='password' size='large' prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="请输入密码登录" />
