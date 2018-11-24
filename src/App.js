@@ -1,8 +1,10 @@
 import React from 'react';
 // import axios from 'axios';
-import { Row, Col, Input, Icon, Button, Checkbox,CheckboxGroup } from 'antd';
+import { Input, Icon, Button, Checkbox } from 'antd';
 import 'antd/dist/antd.css';
 import './App.css';
+
+
 class App extends React.Component {
   componentDidMount() {
     // const host = "http://localhost:8081"
@@ -28,15 +30,12 @@ class App extends React.Component {
   
   render() {
     return (
-      <div className={`full-height`} id="wrapper">
-        <Row type="flex" justify="space-around" align='middle' className={`full-height`}>
-          <Col className='gutter-row' span={12}>
-            <div className='gutter-box'>
-              <div className='login-box' style={{minWidth: '290px'}}>
-                <img src={require(`../src/中国5矿.svg`)} style={{width:'25.5%'}}></img>
+      <div className={`full-height`} id="wrapper">  
+        <div className='gutter-box' style={{minWidth: '290px'}}>
+              <div className='login-box'>
+                <img src={require(`../src/logo-lg.svg`)} style={{width:'25.5%'}}></img>
                 <div style={{height:'10%'}}></div>
-            
-                <div style={{padding:'0px 28px 0px 28px', height:'50%',minWidth: '290px'} }>
+                <div style={{padding:'0px 28px 0px 28px', height:'50%'} }>
                   <Input className='login-input' size='large' prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)'}} />} placeholder="请输入用户名称"/>
                   <div style={{height:'10%'}}></div>
                   <Input className='login-input' type='password' size='large' prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="请输入密码登录" />
@@ -48,9 +47,7 @@ class App extends React.Component {
                   </Button>
                 </div>
               </div>
-            </div>
-          </Col>
-        </Row>
+        </div>
         <div style={{position:'fixed',height:'80px',width:'100%',bottom:'0px',textAlign:'center', fontSize:'11px'}} className='copy-right' id="copy-right">
           <img src={require(`../src/logo.png`)} style={{height:'38%'}}></img>
           <br/>

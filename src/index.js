@@ -5,6 +5,10 @@ import './index.css';
 import App from './App';
 
 import * as serviceWorker from './serviceWorker';
+    // <script src="../src/p5.min.js"></script>
+    // <script src="../src/loginPage/sketch.js"></script>
+
+
 
 ReactDOM.render(<App/>, document.getElementById('root'));
 

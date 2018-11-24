@@ -16,3 +16,14 @@ code {
 #root {
   height: 100%;
 }
+
+#defaultCanvas0 {
+  position: absolute;
+  display: block;
+  top: 0px;
+  margin: 0px auto;
+  left: 20%;
+  z-index: -1;
+  height: 100% !important;
+  widows: 80% !important;
+}
