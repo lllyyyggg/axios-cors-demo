@@ -39,16 +39,7 @@ function draw() {
     for (var j = i + 1; j < NB_PARTS; j++) {
       p2 = parts[j];
       d = dist(p1.pos.x, p1.pos.y, p2.pos.x, p2.pos.y);
-      // if (d > DIST_MAX){
-      //   var froce_attract = p5.Vector.sub(p1.pos, p2.pos);
-      //   var dsquared_attract = froce_attract.magSq();
-      //   dsquared_attract = constrain(dsquared_attract,1,3);
-      //   var G_attract = 10000;
-      //   var strength_attract = dsquared_attract / G_attract;
-      //   froce_attract.setMag(strength_attract);
-      //   // p2.acc.add(froce);
-      //   p1.acc.add(froce_attract);
-      // }
+      
       if (d > 0 && d < DIST_MAX) {
         p1.neighboors.push(p2);
       }
@@ -59,7 +50,7 @@ function draw() {
         var G = 20;
         var strength = G / dsquared;
         froce.setMag(strength);
-        // p2.acc.add(froce);
+      
         froce.mult(-1);
         p1.acc.add(froce);
       }
@@ -71,16 +62,12 @@ function draw() {
   drawTriangles();
 }
 
-// function mousePressed() {
-//   parts.splice(0, 1);
-//   parts.push(new part(mouseX + random(-50, 50), mouseY + random(-50, 50)));
-//   console.log(parts.length);
-// }
+
 function mousePressed() {
   for (var i = 0; i < parts.length; i++) {
     attractor = createVector(mouseX,mouseY);
     parts[i].attracted(attractor);
-       // console.log(parts[i].acc);
+       
   }
 }
 
@@ -88,10 +75,7 @@ function drawTriangles() {
   noStroke();
   fill('rgba(0,121,230, 0.05)');
   stroke('rgba(0,121,230, 0.01)');
-  // for (i=triangles.length;i > NB_TRIANGLES ; i--) {
-  //   triangles.splice(0, 1);
-  // }
-  //noFill();
+  
   beginShape(TRIANGLES);
   for (i = 0; i < triangles.length; i++) {
     triangles[i].display();
@@ -111,10 +95,7 @@ function addTriangles(p_neighboors) {
 }
 
 function Triangle(p1, p2, p3) {
-  // this.A = p1;
-  // this.B = p2;
-  // this.C = p3;
-
+  
   this.display = function() {
     vertex(p1.x, p1.y);
     vertex(p2.x, p2.y);

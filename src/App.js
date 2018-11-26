@@ -32,19 +32,20 @@ class App extends React.Component {
       <div className={`full-height`} id="wrapper">  
         <div className='gutter-box' style={{minWidth: '290px'}}>
               <div className='login-box'>
-                <img src={require(`../src/logo-lg.svg`)} style={{width:'25.5%'}} alt=''></img>
-                <div style={{height:'10%'}}></div>
-                <div style={{padding: '0px 28px 0px 28px', height:'50%'} }>
-                  <Input className='login-input' size='large' prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)'}} />} placeholder="请输入用户名称"/>
+               
+                  <img src={require(`../src/logo-lg.svg`)} style={{width:'25.5%'}} alt=''></img>
                   <div style={{height:'10%'}}></div>
-                  <Input className='login-input' type='password' size='large' prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="请输入密码登录" />
-                  <div style={{height:'10%'}}></div>
-                  <Checkbox style={{float:'left'}}>记住登录状态</Checkbox>
-                  <div style={{height:'20%'}}></div>
-                  <Button size='large' type="primary" style={{width:'100%', fontSize:'14px'}} >
-                    登录
-                  </Button>
-                </div>
+                  <div style={{padding: '0px 28px 0px 28px', height:'50%'} }>
+                    <Input className='login-input' size='large' prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)'}} />} placeholder="请输入用户名称"/>
+                    <div style={{height:'10%'}}></div>
+                    <Input className='login-input' type='password' size='large' prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="请输入密码登录" />
+                    <div style={{height:'10%'}}></div>
+                    <Checkbox style={{float:'left'}}>记住登录状态</Checkbox>
+                    <div style={{height:'20%'}}></div>
+                    <Button size='large' type="primary" style={{width:'100%', fontSize:'14px'}} >
+                      登录
+                    </Button>
+                    </div>
               </div>
         </div>
         <div style={{left:'0px',position:'fixed',height:'80px',width:'100%',bottom:'0px',textAlign:'center', fontSize:'11px'}} className='copy-right' id="copy-right">
